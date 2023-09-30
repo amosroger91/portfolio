@@ -17,13 +17,77 @@
         .card {
             margin-top: 20px;
         }
+          /* Custom CSS for navbar */
+          .navbar {
+            background-color: #343a40; /* Navbar background color */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* Navbar brand text color */
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: #6f42c1; /* Navbar brand text color on hover */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* Navbar link text color */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #6f42c1; /* Navbar link text color on hover */
+        }
+        .navbar.navbar-expand-lg {
+            position: sticky;
+            top: 0;
+            background-color: #343a40; /* Navbar background color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        .chat-button {
+            position: fixed;
+            bottom: 20px; /* Adjust the distance from the bottom as needed */
+            right: 20px; /* Adjust the distance from the right as needed */
+            z-index: 1001; /* Ensure it's above other content */
+        }
     </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Roger D. Hernandez</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programming">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">Languages</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-5">
         
         
-
         <div class="card">
             <div class="card-header">
                 <h2>About Me</h2>
@@ -67,7 +131,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Associate Software Engineer at Walmart</h5>
-                <p class="card-text">Oct 2019 - Nov 2021 | 2 yrs 1 mo</p>
+                <p class="card-text">Aug 2016 - Nov 2021 | 5 yrs 5 mos</p>
                 <hr />
                 <p class="card-text">During my tenure at Walmart, I gained extensive experience in software development and engineering. As a software developer, I worked on large-scale React applications that played a crucial role within the company, serving a massive user base. I was responsible for developing and maintaining features, implementing best practices, and contributing to architectural development. This experience allowed me to improve my skills in React.js, JavaScript, and various other technologies.
                 </p>
@@ -233,9 +297,28 @@
             </div>
         </div>
 
+        <button id="chatButton" class="btn btn-primary chat-button">Chat with me now</button>
+        <script>
+           document.getElementById("chatButton").addEventListener("click", function () {
+        // Replace with your phone number
+        const phoneNumber = "1-405-653-7968";
+        
+        // Create a text message link if on mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            const message = "Hello, I'd like to chat!";
+            const encodedMessage = encodeURIComponent(message);
+            window.location.href = `sms:${phoneNumber}?body=${encodedMessage}`;
+        } else {
+            // Open email client if on a computer
+            const email = "roger.d.hernandez@outlook.com";
+            const subject = "I'd like to chat";
+            const body = "Hello, I'd like to chat!";
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+    });
+        </script>
 
-
-    <footer class="text-center mt-4">
+    <footer class="text-center mt-4 pb-4">
         <p>&copy; 2023 Roger D. Hernandez</p>
     </footer>
 
