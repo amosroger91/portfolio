@@ -13,9 +13,7 @@
             background-color: #f8f9fa;
         }
 
-        .profile-image {
-            max-width: 100%;
-        }
+       
 
         .card {
             margin-top: 20px;
@@ -107,23 +105,20 @@
 
 
         <div class="card">
-            <div class="card-header">
+            <!-- <div class="card-header">
                 <h2 id="about">About Me</h2>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="me.jpg" alt="Profile Photo" class="profile-image">
-                    </div>
-                    <div class="col-md-6">
+            </div> -->
+            <div class="row no-gutters">
+                <div class="col-md-6" style="display: flex; align-items: stretch;">
+                    <img src="img/me.jpg" alt="Profile Photo" class="profile-image" style="object-fit: cover; width: 100%; height: 100%;">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
                         <h1 class="mt-4">Roger D. Hernandez</h1>
                         <p class="lead"><i class="fas fa-briefcase"></i> Software Developer</p>
                         <p><i class="fas fa-map-marker-alt"></i> Oklahoma County, Oklahoma, United States</p>
-                        <p><b>"Waste no more time arguing what a good man should be. Be one." - Marcus Aurelius</b></p>
-                        <p>I'm a passionate software developer with experience at companies like Walmart and Amshot. My
-                            technical skills include React, Angular, Vue, ASP.NET, React Native, Azure DevOps Pipeline,
-                            and Amazon Cloud. I have a proven record of leading teams and delivering innovative
-                            solutions that make a measurable impact.</p>
+                        <p><b>"We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths." - Walt Disney</b></p>
+                        <p>I’m a passionate software developer with a track record of success at companies like Walmart and Amshot. My expertise spans modern frontend frameworks such as React, Angular, and Vue, alongside backend and cloud technologies like ASP.NET, Azure DevOps Pipelines, and Amazon Cloud. With experience leading teams and mentoring developers, I thrive on delivering innovative, impactful solutions that drive measurable results.</p>
                         <div class="d-flex flex-wrap" role="group" aria-label="Contact Links">
                             <a href="https://github.com/amosroger91" target="_blank" class="btn btn-primary mr-2 mb-2"
                                 style="background-color: #6f42c1;"><i class="fab fa-github"></i> GitHub</a>
@@ -140,7 +135,6 @@
                                 style="background-color: #3f51b5;"><i class="fas fa-download"></i> Resume</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -148,49 +142,48 @@
 
         <h2 class="mt-4" id="work">Work Experience</h2>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Software Developer at amshot</h5>
-                <p class="card-text">Feb 2022 - Sep 2023 | 1 yr 8 mos</p>
-                <hr />
-                <p class="card-text">As a software developer at Amshot, I've had the privilege of working on numerous
-                    projects and engaging with diverse clients. In one of these projects, I took on the role of team
-                    lead, driving the project towards successful completion. This experience has allowed me to make
-                    crucial technical decisions and assume leadership roles in developing React front-ends. Being
-                    exposed to various technical environments and clients has enriched my understanding of the oil and
-                    gas industry. I have honed my skills in an array of technologies, including Angular 1, Vue 2,
-                    ASP.NET, React Native, Azure DevOps Pipeline, and Amazon Cloud. Committed to continuous improvement,
-                    I always strive to stay current with the latest technologies and best practices in the field.</p>
+            <div class="row no-gutters">
+                <!-- Content on the left side -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Software Developer</b> at <b>Amshot</b></h5>
+                        <p class="card-text">Feb 2022 - Sep 2023 | 1 yr 8 mos</p>
+                        <hr />
+                        <p class="card-text">As a Software Developer at Amshot, I worked on a range of projects across various industries, including oil and gas. One of the highlights of my role was stepping into the position of Team Lead for a critical project. I guided the team through high-pressure situations, made key technical decisions, and led the development of React-based frontends. This experience sharpened my leadership abilities and helped me successfully deliver projects on time without compromising quality.</p>
+                        <p class="card-text">Throughout my tenure, I gained expertise in a variety of technologies, such as AngularJS, Vue 2, ASP.NET, React Native, Azure DevOps Pipelines, and Amazon Cloud. I was constantly driven by a commitment to improve and stay updated on emerging technologies and best practices. This allowed me to deliver innovative, high-quality solutions while ensuring the technical success of the projects I worked on.</p>
+                        <p class="card-text">Beyond my technical skills, I fostered a collaborative, supportive environment within the team. My approachable leadership style helped strengthen team dynamics and promote knowledge-sharing, contributing to increased productivity and overall project success. I consistently demonstrated strong organizational and time management skills, enabling me to effectively prioritize tasks and address challenges proactively.</p>
+                    </div>
+                </div>
+                
+                <!-- Image on the right side -->
+                <div class="col-md-4">
+                    <img src="img/c64.jpg" class="card-img" alt="Amshot project" style="object-fit: cover; width: 100%; height: 100%;">
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Associate Software Engineer at Walmart</h5>
-                <p class="card-text">Aug 2016 - Nov 2021 | 5 yrs 5 mos</p>
-                <hr />
-                <p class="card-text">During my tenure at Walmart, I gained extensive experience in software development
-                    and engineering. As a software developer, I worked on large-scale React applications that played a
-                    crucial role within the company, serving a massive user base. I was responsible for developing and
-                    maintaining features, implementing best practices, and contributing to architectural development.
-                    This experience allowed me to improve my skills in React.js, JavaScript, and various other
-                    technologies.
-                </p>
-                <p class="card-text">I also took on the role of Tech Lead, where I provided guidance on cloud
-                    architecture decisions, advocated for agile methodologies, and mentored junior developers and
-                    interns. I successfully built and deployed Azure cloud-hosted applications, resulting in significant
-                    cost savings for the company. These applications were designed to handle a global user base of over
-                    35,000, showcasing my ability to work in high-performance, high-availability settings.
-                </p>
-                <p class="card-text">In addition to my software development roles, I began my career at Walmart as a
-                    Help Desk Technician, providing support and troubleshooting for software and hardware issues. Over
-                    time, I transitioned to a role where I created PowerShell scripts to automate common fixes,
-                    improving the efficiency of the help desk operations. I also led the development of a self-service
-                    application that was deployed on a large scale, further enhancing the help desk's efficiency.
-                </p>
-                <p class="card-text">In 2016, my team won first place in the "Walmart Code@thon" with a voice
-                    application built using node.js, demonstrating my ability to leverage technology for innovative
-                    solutions.
-                </p>
+            <div class="row no-gutters">
+                 <!-- Image on the right side -->
+                 <div class="col-md-4">
+                    <img src="img/hoc-dev.jpg" class="card-img" alt="Amshot project" style="object-fit: cover; width: 100%; height: 100%;">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Associate Software Engineer</b> at <b>Walmart</b></h5>
+                        <p class="card-text">Aug 2016 - Nov 2021 | 5 yrs 5 mos</p>
+                        <hr />
+                        <p class="card-text">During my tenure at Walmart, I progressed to the role of Associate Software Engineer, where I made significant contributions to multiple high-impact projects within the ADE space. Utilizing technologies such as React, Node.js, MongoDB, and Express with modern Azure serverless architecture, I played a key role in designing scalable, efficient solutions for a global user base.
+                        </p>
+                        <p class="card-text">I spearheaded the development of an automation-driven "Self-Service" product, which streamlined operations and achieved over $100k in annual savings. This success led to the formation of the Home Office Client Automation Team, which I directed, furthering Walmart's automation capabilities and improving operational efficiency.
+                        </p>
+                        <p class="card-text">Additionally, I designed and developed prototypes for internal Walmart applications, many of which are still in use today, showcasing their enduring value and scalability. As a subject matter expert for the organization’s Content Management System (CMS), I guided deployment strategies, collaborated with cross-functional teams, and ensured seamless integration across projects.
+                        </p>
+                        <p class="card-text">These experiences not only enhanced my technical expertise in cloud architecture, automation, and frontend development but also strengthened my leadership, collaboration, and strategic thinking skills, contributing to Walmart’s global operational success.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -201,30 +194,34 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-5">
-                        <p>While I enjoy learning new skills and have been able to dabble in projects over my career in
-                            many stacks and languages, these are the languages amd technologies I'm most comfortable
-                            with professionally. </p>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>GraphQL</li>
-                            <li>Gatsby Js</li>
-                            <li>jQuery</li>
-                            <li>Git</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7">
-                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGQjdjb"
-                            data-user="DatBoiRog94"
-                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                            <span>See the Pen <a href="https://codepen.io/DatBoiRog94/pen/bGQjdjb">
-                                    Maze Runner</a> by Roger Hernandez (<a
-                                    href="https://codepen.io/DatBoiRog94">@DatBoiRog94</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
+                    <div class="col-md-12">
+                        <p>
+                            While I continuously strive to expand my skill set, my professional expertise lies in a robust set of 
+                            languages and technologies. Over the course of my career, I have had the opportunity to work on diverse 
+                            projects across various stacks and languages, gaining hands-on experience in both frontend and backend 
+                            development.
                         </p>
-                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        <p>
+                            Recently, I have been exploring the potential of modern AI technologies, including running Llama 3 locally 
+                            using AnyGPT to develop innovative offline AI applications. This work has allowed me to delve into 
+                            cutting-edge AI solutions and integrate them into practical, user-centric applications.
+                        </p>
+                        <p>
+                            The technologies I am most comfortable with professionally include:
+                        </p>
+                        <ul>
+                            <li><strong>JavaScript</strong>: Proficient in building dynamic and interactive web applications.</li>
+                            <li><strong>React.js</strong>: Expertise in creating scalable, reusable components and managing application state.</li>
+                            <li><strong>Node.js</strong>: Skilled in backend development, building APIs, and handling server-side logic.</li>
+                            <li><strong>GraphQL</strong>: Experienced in designing flexible, efficient APIs for seamless data querying.</li>
+                            <li><strong>Gatsby.js</strong>: Knowledgeable in building fast, modern static websites and apps.</li>
+                            <li><strong>jQuery</strong>: Adept at enhancing legacy codebases with interactive features.</li>
+                            <li><strong>Git</strong>: Proficient in version control, collaboration workflows, and code management.</li>
+                        </ul>
+                        <p>
+                            This combination of foundational skills and a passion for exploring emerging technologies enables me to 
+                            approach projects with versatility, creativity, and a commitment to delivering high-quality solutions.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -237,58 +234,58 @@
             </div>
             <div class="card-body">
                 <ul>
-                    <li>Management</li>
-                    <li>Leadership</li>
-                    <li>Customer Service</li>
-                    <li>Process Improvement</li>
-                    <li>Remote Troubleshooting</li>
-                    <li>Remote User Support</li>
+                    <li><strong>Team Leadership & Mentorship</strong>: Proven ability to lead development teams, mentor junior developers, and foster a collaborative environment that drives innovation and growth.</li>
+                    <li><strong>Technical Leadership</strong>: Expertise in guiding technical decisions, particularly in cloud architecture and automation, to deliver scalable, high-impact solutions.</li>
+                    <li><strong>Customer-Focused Solutions</strong>: Skilled in translating complex technical challenges into user-friendly solutions, with a strong emphasis on meeting client needs and enhancing the user experience.</li>
+                    <li><strong>Process Optimization</strong>: Experienced in identifying opportunities for process improvement and automation, streamlining workflows to improve efficiency and reduce costs.</li>
+                    <li><strong>Remote Troubleshooting & Support</strong>: Strong background in providing remote technical support, solving complex issues, and ensuring smooth operations for remote teams.</li>
+                    <li><strong>Cross-Functional Collaboration</strong>: Adept at working closely with diverse teams, from software developers to non-technical stakeholders, ensuring alignment and effective communication across the board.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- General Technical Skills -->
-        <div class="card">
-            <div class="card-header">
-                <h2>General Technical Skills</h2>
+
+<!-- General Technical Skills -->
+<div class="card">
+    <div class="card-header">
+        <h2>General Technical Skills</h2>
+    </div>
+    <div class="card-body">
+        <p class="card-text">Throughout my career in IT, I've had the opportunity to work hands-on with a broad range of technologies, gaining valuable experience across multiple domains. These opportunities have helped me build a versatile skill set, including expertise in:</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>Web Application Design</li>
+                    <li>Web Scraping</li>
+                    <li>AI Automation (GPT Integrations)</li>
+                    <li>Large Language Models (LLMs)</li>
+                    <li>Scripting and Automation</li>
+                </ul>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <ul>
-                            <li>Web Application Development</li>
-                            <li>Web Development</li>
-                            <li>Web Design</li>
-                            <li>Scripting</li>
-                            <li>Hardware Diagnostics</li>
-                            <li>Computer Repair</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>Software Installation</li>
-                            <li>Computer Hardware</li>
-                            <li>Linux</li>
-                            <li>Web Application Design</li>
-                            <li>Hardware Installation</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>Desktop Application Support</li>
-                            <li>Microsoft Azure</li>
-                            <li>Cloud Computing</li>
-                            <li>Docker Products</li>
-                            <li>MySQL</li>
-                            <li>Technical Support</li>
-                            <li>Troubleshooting</li>
-                            <li>Bootstrap</li>
-                            <li>Content Management Systems (CMS)</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Server Configuration</li>
+                    <li>Deployment Pipeline Configurations</li>
+                    <li>Cloud Computing</li>
+                    <li>Serverless Functions</li>
+                    <li>Containerization</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Computer Hardware Repair/Diagnostics</li>
+                    <li>Software Installation</li>
+                    <li>Hardware Installation</li>
+                    <li>Linux Support</li>
+                    <li>Database Configuration</li>
+                    <li>Technical Support</li>
+                    <li>Computer Troubleshooting</li>
+                </ul>
             </div>
         </div>
+    </div>
+</div>
 
 
         <div class="row" id="achievements">
@@ -299,21 +296,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 align-self-center">
-                            <img src="Capture.PNG" alt="Achievement Image" class="img-fluid p-4">
+                            <img src="img/Capture.PNG" alt="Achievement Image" class="img-fluid p-4">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">1st Place in Walmart's Code@thon - "Customer First" Category</h5>
-                                <p class="card-text">Won 1st place in Walmart's Code@thon in the "Customer First"
-                                    Academy. My team and I developed a voice assistant similar to Amazon's Alexa, called
-                                    "Hey Sparky", which allowed customers to access and modify items in their Walmart
-                                    shopping cart through voice AI recognition. This project allowed me to showcase my
-                                    skills in the area of voice technology and AI, it was a great opportunity to work on
-                                    an innovative project with a dedicated team and contribute to a competition that
-                                    focuses on Customer First. This was a great learning experience for me and it helped
-                                    me to develop my skills and knowledge in the field of voice recognition and AI. I am
-                                    proud of what my team and I accomplished and I am looking forward to future
-                                    opportunities to work on innovative projects.</p>
+                                <p class="card-text">My team and I were awarded 1st place in Walmart's Code@thon within the "Customer First" Academy. We developed "Hey Sparky," a voice assistant similar to Amazon's Alexa, which enabled customers to interact with their Walmart shopping cart through voice commands. This project provided an excellent opportunity to showcase my expertise in voice technology and AI. Working alongside a dedicated team, I was able to contribute to an innovative solution that aligned with Walmart's focus on putting customers first. This experience not only expanded my skills in voice recognition and AI but also deepened my passion for working on cutting-edge projects. I am proud of our achievements and excited for future opportunities to contribute to groundbreaking initiatives.</p>
                             </div>
                         </div>
                     </div>
@@ -361,7 +349,7 @@
             <div class="card-body">
                 <ul>
                     <li>English - Native or bilingual proficiency</li>
-                    <li>Spanish - Proficient</li>
+                    <li>Spanish - Professional</li>
                 </ul>
             </div>
         </div>
@@ -387,7 +375,7 @@
 
 
         <footer class="text-center mt-4 pb-4">
-            <p>&copy; 2023 Roger D. Hernandez</p>
+            <p>&copy; 2023 Roger D. Hernandez, all rights reserved.</p>
         </footer>
 
         <!-- Bootstrap JS and Popper.js (for Bootstrap functionality) -->
