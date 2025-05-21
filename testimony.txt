@@ -1,0 +1,45 @@
+Sometimes something comes along that shakes you to the core. Not just fear or worry—but the kind of collapse that takes everything with it.
+
+When I first started my career at Walmart it was 2016 and I was 21 years old. I joined as a Level 1 Field Support Technician, answering phones and helping employees troubleshoot issues. A few months in, I began writing PowerShell scripts and taking on small automation tasks. Eventually, leadership approached me with a project: could I build a web portal to handle ticket intake for the support desk after hours, once live intake shut down?
+
+I said yes—and when we deployed it, it worked so well they asked me to make it permanent, to handle tickets all the time. That project grew into a self-service tool: users could log in, walk through a custom support flow, and all the answers would be tracked and submitted with the ticket. I built out an admin panel where support leads could change questions and logic without needing a developer. The tool saved the company over $100,000 in call volume reduction alone.
+
+Leadership noticed. They built a whole team around me. I trained a couple of junior devs—guys who are still developers at Walmart to this day. Eventually, our whole team was promoted and moved into the Global Business Solutions division. Our job became building internal replacements for expensive third-party tools. One major win: I led the initial development of the app that replaced Mailchimp for Walmart—saving them hundreds of thousands of dollars annually.
+
+Then COVID hit. And everything changed.
+
+My already weak marriage unraveled. I went through a divorce in the middle of a global pandemic. I was living alone in an unfamiliar city, working from home—and after the divorce, I sometimes didn’t see another person for months. No conversations. No human connection. Just silence and screens. That level of isolation messes with you. I started slipping in my productivity, feeling ashamed of how I was falling behind. Eventually, I made the painful decision to quit my position at Walmart and take a break to reset.
+
+Thankfully, I found another programming job fairly quickly in Oklahoma City at a small company. But it was chaos. They were horribly mismanaged, constantly throwing massive projects at me with no support system and then wondering why deadlines slipped. Eventually, they began hiring more people, and I got somewhat close to my manager. He always told me I was doing well—that if anything ever came up, if my job was ever in danger, he’d have my back.
+
+By then, I had met the love of my life and  remarried. I had a 5-year-old stepdaughter, and I was the only one working—my wife couldn’t. We were trying to build something stable on what we didn't realize was a very shaky foundation.
+
+The the layoffs started. Quiet at first—targeted. They began looking for excuses, cutting people for anything they could find. I wasn’t the first to go, but I was one of them. Eventually, they laid off the entire department. The same manager who had assured me he’d protect me? He’d hired his best friend and convinced the owner the two of them could handle it all alone.
+
+One of my coworkers took his own life, presumably from the weight of the stress. I thought about doing the same.
+
+We couldn't make rent payments. I lost my car. We moved into motels, and things got extremely bleak. I ended up working fast food and doing DoorDash just to get by. There were nights when I had nothing—no job, no home, not even a dollar to my name.
+
+I did eventually find a path out—though it didn’t look anything like I expected. I got a job at a call center, where I was paid $19 an hour to get yelled at all day over banking issues. It wasn’t glamorous, and it definitely wasn’t my dream job, but it was something. At the time, we were living in a roach-infested motel. That job, hard as it was, gave us just enough of a lifeline. We scraped together everything we had, took advantage of a “move-in special,” and finally got into an apartment of our own.
+
+Not long after that, I was offered a job where I work now—as an IT support technician. I wasn’t there more than a couple of weeks before they started trusting me with automation projects. Now, I’m spending two to three days a week working in the role of an automation engineer—and it’s honestly so much fun. After feeling like I had lost my career forever, I’ve been given another chance—not just to work, but to create and build again.
+
+
+That kind of fall changes you. Being beyond hopeless after having your life somewhat together is like falling off a cliff with no bottom. Every character flaw I’d ever buried came to the surface. I was emotionally wrecked and spiritually empty. My marriage nearly broke apart several times under the pressure.
+
+They say most men die in their 20s and are buried in their 80s. I think I understand that now—not because I gave up, but because I felt what it’s like to go numb inside. To feel like the best parts of you are gone and all that's left is just survival. 
+
+Throughout it all, the ups and downs, and through fights and nights spent arguing about uncertainty, one thing my wife never did was blame me. We did suffer greatly as a couple during this time. We had massive fights, and even took a short separation. But somehow, despite it all—we stayed. She’s still here next to me.
+
+The more I go on this journey, the more I realize it is becoming a love story. Not just between my wife and me, but between me and God.
+
+He didn’t abandon me in that pit. He met me there. And slowly, piece by piece, He began to lead me out. I'm back in IT now—I’m doing meaningful work, learning new skills, and rebuilding the future I thought was lost.
+
+But more importantly, I’m praying. I’m battling my flesh. I'm picking up my cross. My life still isn’t what it was, but I have Him now—closer than ever before.
+
+I made mistakes. I was broken. But I’m still here.
+
+Christ is King. And I’m learning to live like it.
+
+
+
