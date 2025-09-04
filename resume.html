@@ -1,598 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Roger Resume</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 
-:root {
-    --accent-color: #282aa5b4;
-  }* 
-  
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Roger Resume</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 
-body {
-  background: #585c68;
-  font-size: 14px;
-  line-height: 22px;
-  color: #555555;
-}
+    :root {
+      --accent-color: #282aa5b4;
+    }
 
-.bold {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
 
-.semi-bold {
-  font-weight: 500;
-  font-size: 16px;
-}
+    body {
+      background: #585c68;
+      font-size: 14px;
+      line-height: 22px;
+      color: #555555;
+    }
 
-.resume {
-  width: 800px;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
-}
+    .bold {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
 
-.resume .resume_left {
-  width: 280px;
-  background: var(--accent-color);
-}
+    .semi-bold {
+      font-weight: 500;
+      font-size: 16px;
+    }
 
-.accent-color {
-  color: var(--accent-color);  
-}
+    .resume {
+      width: 800px;
+      height: auto;
+      display: flex;
+      margin: 50px auto;
+    }
 
-.resume .resume_left .resume_profile {
-  width: 100%;
-  height: 280px;
-}
+    .resume .resume_left {
+      width: 280px;
+      background: var(--accent-color);
+    }
 
-.resume .resume_left .resume_profile img {
-    object-fit: cover; 
-    width: 100%; 
-    height: 100%;
-}
+    .accent-color {
+      color: var(--accent-color);
+    }
 
-.resume .resume_left .resume_content {
-  padding: 0 25px;
-}
+    .resume .resume_left .resume_profile {
+      width: 100%;
+      height: 280px;
+    }
 
-.resume .title {
-  margin-bottom: 10px;
-}
+    .resume .resume_left .resume_profile img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
 
-.resume .resume_left .bold {
-  color: #fff;
-}
+    .resume .resume_left .resume_content {
+      padding: 0 25px;
+    }
 
-.resume .resume_left .regular {
-  color: #b1eaff;
-}
+    .resume .title {
+      margin-bottom: 10px;
+    }
 
-.resume .resume_item {
-  padding: 25px 0;
-  padding-top: 0px
-}
+    .resume .resume_left .bold {
+      color: #fff;
+    }
 
-.resume .resume_left .resume_item:last-child,
-.resume .resume_right .resume_item:last-child {
-  border-bottom: 0px;
-}
+    .resume .resume_left .regular {
+      color: #b1eaff;
+    }
 
-.resume .resume_left ul li {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-}
+    .resume .resume_item {
+      padding: 25px 0;
+      padding-top: 0px
+    }
 
-.resume .resume_left ul li:last-child {
-  margin-bottom: 0;
-}
+    .resume .resume_left .resume_item:last-child,
+    .resume .resume_right .resume_item:last-child {
+      border-bottom: 0px;
+    }
 
-.resume .resume_left ul li .icon {
-  width: 35px;
-  height: 35px;
-  background: #fff;
-  color: var(--accent-color);
-  border-radius: 50%;
-  margin-right: 15px;
-  font-size: 16px;
-  position: relative;
-}
+    .resume .resume_left ul li {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+    }
 
-.resume .icon i,
-.resume .resume_right .resume_hobby ul li i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    .resume .resume_left ul li:last-child {
+      margin-bottom: 0;
+    }
 
-.resume .resume_left ul li .data {
-  color: #b1eaff;
-}
+    .resume .resume_left ul li .icon {
+      width: 35px;
+      height: 35px;
+      background: #fff;
+      color: var(--accent-color);
+      border-radius: 50%;
+      margin-right: 15px;
+      font-size: 16px;
+      position: relative;
+    }
 
-.resume .resume_left .resume_skills ul li {
-  display: flex;
-  margin-bottom: 10px;
-  color: #b1eaff;
-  justify-content: space-between;
-  align-items: center;
-}
+    .resume .icon i,
+    .resume .resume_right .resume_hobby ul li i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-.resume .resume_left .resume_skills ul li .skill_name {
-  width: 25%;
-}
+    .resume .resume_left ul li .data {
+      color: #b1eaff;
+    }
 
-.resume .resume_left .resume_skills ul li .skill_progress {
-  width: 60%;
-  margin: 0 5px;
-  height: 5px;
-  background: #009fd9;
-  position: relative;
-}
+    .resume .resume_left .resume_skills ul li {
+      display: flex;
+      margin-bottom: 10px;
+      color: #b1eaff;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.resume .resume_left .resume_skills ul li .skill_per {
-  width: 15%;
-}
+    .resume .resume_left .resume_skills ul li .skill_name {
+      width: 25%;
+    }
 
-.resume .resume_left .resume_skills ul li .skill_progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: #fff;
-}
+    .resume .resume_left .resume_skills ul li .skill_progress {
+      width: 60%;
+      margin: 0 5px;
+      height: 5px;
+      background: #009fd9;
+      position: relative;
+    }
 
-.resume .resume_left .resume_social .semi-bold {
-  color: #fff;
-  margin-bottom: 3px;
-}
+    .resume .resume_left .resume_skills ul li .skill_per {
+      width: 15%;
+    }
 
-.resume .resume_right {
-  width: 520px;
-  background: #fff;
-  padding: 25px;
-}
+    .resume .resume_left .resume_skills ul li .skill_progress span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #fff;
+    }
 
-.resume .resume_right .bold {
-  color: var(--accent-color);
-}
+    .resume .resume_left .resume_social .semi-bold {
+      color: #fff;
+      margin-bottom: 3px;
+    }
 
-.resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
-  padding-left: 40px;
-  overflow: hidden;
-}
+    .resume .resume_right {
+      width: 520px;
+      background: #fff;
+      padding: 25px;
+    }
 
-.resume .resume_right ul li {
-  position: relative;
-}
+    .resume .resume_right .bold {
+      color: var(--accent-color);
+    }
 
-.resume .resume_right ul li .date {
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
+    .resume .resume_right .resume_work ul,
+    .resume .resume_right .resume_education ul {
+      padding-left: 40px;
+      overflow: hidden;
+    }
 
-.resume .resume_right ul li .info {
-  margin-bottom: 20px;
-}
+    .resume .resume_right ul li {
+      position: relative;
+    }
 
-.resume .resume_right ul li:last-child .info {
-  margin-bottom: 0;
-}
+    .resume .resume_right ul li .date {
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
 
-.resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -25px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-color);
-}
+    .resume .resume_right ul li .info {
+      margin-bottom: 20px;
+    }
 
-.resume .resume_right .resume_work ul li:after,
-.resume .resume_right .resume_education ul li:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 115px;
-  background: var(--accent-color);
-}
+    .resume .resume_right ul li:last-child .info {
+      margin-bottom: 0;
+    }
 
-.resume .resume_right .resume_hobby ul {
-  display: flex;
-  justify-content: space-between;
-}
+    .resume .resume_right .resume_work ul li:before,
+    .resume .resume_right .resume_education ul li:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -25px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-color);
+    }
 
-.resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
-  border: 2px solid var(--accent-color);
-  border-radius: 50%;
-  position: relative;
-  color: var(--accent-color);
-}
+    .resume .resume_right .resume_work ul li:after,
+    .resume .resume_right .resume_education ul li:after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: -21px;
+      width: 2px;
+      height: 115px;
+      background: var(--accent-color);
+    }
 
-.resume .resume_right .resume_hobby ul li i {
-  font-size: 30px;
-}
+    .resume .resume_right .resume_hobby ul {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -52px;
-  width: 50px;
-  height: 2px;
-  background: var(--accent-color);
-}
+    .resume .resume_right .resume_hobby ul li {
+      width: 80px;
+      height: 80px;
+      border: 2px solid var(--accent-color);
+      border-radius: 50%;
+      position: relative;
+      color: var(--accent-color);
+    }
 
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
-}
+    .resume .resume_right .resume_hobby ul li i {
+      font-size: 30px;
+    }
 
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
-    gap: 5px; /* Adjust spacing between columns */
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skills-list li {
-    font-size: 16px; /* Adjust as needed */
-    margin: 0;
-  }
+    .resume .resume_right .resume_hobby ul li:before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      right: -52px;
+      width: 50px;
+      height: 2px;
+      background: var(--accent-color);
+    }
 
-/* Ensure the list has correct display and bullets are visible */
-.resume-bullets {
-    padding-top:5px;
-    padding-left: 20px; /* Adds space to the left of the list */
-    margin: 0; /* Remove default margins */
-}
+    .resume .resume_right .resume_hobby ul li:last-child:before {
+      display: none;
+    }
 
-/* Targeting the bullets specifically */
-.resume-bullets li::marker {
-    color: #3498db; /* Change to your desired color */
-}
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* Creates two columns */
+      gap: 5px;
+      /* Adjust spacing between columns */
+      list-style-type: none;
+      padding: 0;
+    }
 
-/* Optional: Styling the list items */
-.resume-bullets li {
-    margin-bottom: 10px; /* Adds space between each item */
-    font-size: 16px; /* Adjust the font size if needed */
-}
+    .skills-list li {
+      font-size: 16px;
+      /* Adjust as needed */
+      margin: 0;
+    }
 
-.no-list-style {
-    list-style: none;
-}
+    /* Ensure the list has correct display and bullets are visible */
+    .resume-bullets {
+      padding-top: 5px;
+      padding-left: 20px;
+      /* Adds space to the left of the list */
+      margin: 0;
+      /* Remove default margins */
+    }
 
-.hobbies-li-text{
-    padding-left:10px;
-}
+    /* Targeting the bullets specifically */
+    .resume-bullets li::marker {
+      color: #3498db;
+      /* Change to your desired color */
+    }
 
-.hobbies-text{
-    color: white;
-    padding-bottom: 15px;
-}
+    /* Optional: Styling the list items */
+    .resume-bullets li {
+      margin-bottom: 10px;
+      /* Adds space between each item */
+      font-size: 16px;
+      /* Adjust the font size if needed */
+    }
 
-.first-item {
-    padding-top: 20px;
-}
-    </style>
-  </head>
-  <body>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-<div class="resume">
-   <div class="resume_left">
-     <div class="resume_profile">
-       <img src="https://amosroger91.github.io/portfolio/img/me.jpg" alt="profile_pic">
-     </div>
-     <div class="resume_content">
-       <div class="resume_item resume_info">
-         <div class="title first-item">
-           <p class="bold">Roger Hernandez</p>
-           <p class="regular">Software Developer, IT Engineer</p>
-         </div>
-         <ul>
-           <li>
-             <div class="icon">
-               <i class="fas fa-map-signs"></i>
-             </div>
-             <div class="data">
-               Fort Smith Arkansas
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fas fa-mobile-alt"></i>
-             </div>
-             <div class="data">
-               (405) 653-7968
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fas fa-envelope"></i>
-             </div>
-             <div class="data">
-               amosroger91@gmail.com
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-weebly"></i>
-             </div>
-             <div class="data">
-               www.rogeramos.site
-             </div>
-           </li>
-         </ul>
-       </div>
+    .no-list-style {
+      list-style: none;
+    }
 
-<div class="resume_item resume_skills">
-  <div class="title">
-    <p class="bold">Programming Skills</p>
-  </div>
-  <ul class="skills-list">
-    <li>JavaScript</li>         
-    <li>React.js</li>
-    <li>Node.js</li>         
-    <li>GraphQL</li>         
-    <li>Gatsby.js</li>         
-    <li>Git</li>
-    <li>PHP</li>
-    <li>PowerShell</li>       
-  </ul>
-</div>
+    .hobbies-li-text {
+      padding-left: 10px;
+    }
 
+    .hobbies-text {
+      color: white;
+      padding-bottom: 15px;
+    }
 
-<div class="resume_item resume_skills">
-    <div class="title">
-      <p class="bold">General IT Skills</p>
-    </div>
-    <ul class="skills-list">
-        <li>Hardware Support</li>
-        <li>Software Support</li>
-        <li>Server Support</li>
-        <li>Active Directory</li>
-        <li>SSH</li>
-        <li>CMD/Terminal</li>
-        <li>Remote Support</li>
-        <li>Linux</li>
-        <li>Database Managment</li>
-        <li>Server Support</li>
-        <li>Cloud Computing</li>
-        <li>PowerShell</li>
-        <li>Windows</li>
-        <li>Documentation</li>
-    </ul>
-  </div>
+    .first-item {
+      padding-top: 20px;
+    }
+  </style>
+</head>
 
-       <div class="resume_item resume_social">
-         <div class="title">
-           <p class="bold">Social</p>
-         </div>
-         <ul>
-           <li>
-             <div class="icon">
-               <i class="fab fa-twitter-square"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">GitHub</p>
-               <p>amosroger91</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-youtube"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Codepen</p>
-               <p>DatBoiRog94</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-linkedin"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Linkedin</p>
-               <p>roger-d-hernandez</p>
-             </div>
-           </li>
-         </ul>
-       </div>
-
-       <div class="resume_item resume_hobby">
-        <div class="title">
-             <p class="bold">Hobbies</p>
-           </div>
-           <p class="hobbies-text">I have a strong passion for engineering and problem-solving, which extends beyond my professional work into my personal interests. I enjoy exploring a variety of technical hobbies that allow me to apply creativity and improve my skills in different areas of technology.</p>
-         <ul class="no-list-style">
+<body>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <div class="resume">
+    <div class="resume_left">
+      <div class="resume_profile">
+        <img src="https://amosroger91.github.io/portfolio/img/me.jpg" alt="profile_pic">
+      </div>
+      <div class="resume_content">
+        <div class="resume_item resume_info">
+          <div class="title first-item">
+            <p class="bold">Roger Hernandez</p>
+            <p class="regular">Software Developer, IT Engineer</p>
+          </div>
+          <ul>
             <li>
-                <div class="icon">
-                  <i class="fas fa-cogs"></i>
-                </div>
-                <div class="data">
-                  <p class="semi-bold">3D Printing</p>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fas fa-broadcast-tower"></i>
-                </div>
-                <div class="data">
-                  <p class="semi-bold">Amateur Radio</p>
-                </div>
-              </li>
-              
-              <li>
-                <div class="icon">
-                  <i class="fas fa-microchip"></i>
-                </div>
-                <div class="data">
-                  <p class="semi-bold">Electrical Engineering</p>
-                </div>
-              </li>
-              
-              <li>
-                <div class="icon">
-                  <i class="fas fa-guitar"></i>
-                </div>
-                <div class="data">
-                  <p class="semi-bold">Guitar</p>
-                </div>
-              </li>
-              
-        </ul>
+              <div class="icon">
+                <i class="fas fa-map-signs"></i>
+              </div>
+              <div class="data">
+                Fort Smith Arkansas
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="data">
+                (405) 653-7968
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="data">
+                amosroger91@gmail.com
+              </div>
+            </li>
+          </ul>
+        </div>
 
- 
+        <div class="resume_item resume_skills">
+          <div class="title">
+            <p class="bold">Programming Skills</p>
+          </div>
+          <ul class="skills-list">
+            <li>Full Stack Javascript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Automation</li>
+            <li>AI Agent Development</li>
+            <li>Source Control (Git)</li>
+            <li>Docker</li>
+            <li>PowerShell</li>
+          </ul>
+        </div>
+
+        <div class="resume_item resume_social">
+          <div class="title">
+            <p class="bold">Social</p>
+          </div>
+          <ul>
+            <li>
+              <div class="icon">
+                <i class="fab fa-twitter-square"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">GitHub</p>
+                <p>amosroger91</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">Codepen</p>
+                <p>DatBoiRog94</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">Linkedin</p>
+                <p>roger-d-hernandez</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resume_item resume_hobby">
+          <div class="title">
+            <p class="bold">Hobbies</p>
+          </div>
+          <p class="hobbies-text">I have a strong passion for engineering and problem-solving, which extends beyond my
+            professional work into my personal interests. I enjoy exploring a variety of technical hobbies that allow me
+            to apply creativity and improve my skills in different areas of technology.</p>
+          <ul class="no-list-style">
+            <li>
+              <div class="icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">3D Printing</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fas fa-broadcast-tower"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">Amateur Radio</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">Electrical Engineering</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon">
+                <i class="fas fa-guitar"></i>
+              </div>
+              <div class="data">
+                <p class="semi-bold">Guitar</p>
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="resume_right">
+      <div class="resume_item resume_about">
+        <div class="title first-item">
+          <p class="bold">About Me</p>
+        </div>
+        <p>Highly motivated Software Engineer with over 7 years of experience spanning full-stack development, DevOps,
+          and IT systems automation. Proven expertise in architecting robust applications using JavaScript (React,
+          Node.js) and the .NET ecosystem. Adept at leading teams and delivering high-impact solutions, including a
+          self-service automation product that generated over $100k in annual savings at Walmart and a zero-touch device
+          provisioning system. Seeking to leverage a unique, holistic perspective on software and infrastructure to
+          build efficient and scalable solutions.</p>
       </div>
 
 
-     </div>
-  </div>
-  <div class="resume_right">
-    <div class="resume_item resume_about">
-        <div class="title first-item">
-           <p class="bold">About Me</p>
-         </div>
-        <p>I am a versatile IT professional and software developer with a strong background in both technical support and software engineering. Starting in hardware repair and system troubleshooting, I developed a knack for solving complex problems. Transitioning to software development, I have led teams and delivered solutions using modern technologies like React, Angular, Node.js, ASP.NET, and cloud platforms like Azure and AWS. My expertise also includes IT infrastructure, PowerShell scripting, and server configuration. Passionate about automation and scalable application design, I excel at driving efficiency and delivering impactful results in both IT support and software development.</p>
-    </div>
 
-
-
-    <div class="resume_item">
+      <div class="resume_item">
         <div class="title">
-           <p class="bold">Work Experience</p>
-         </div>
+          <p class="bold">Work Experience</p>
+        </div>
         <ul class="no-list-style">
 
-            <li>
-                <div class="date">July 2024 - Present | 7 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Billingual Customer Service Representative at <b class="accent-color">Foundever</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>Handle high-volume inbound calls, providing effective and professional assistance to customers in both English and Spanish, ensuring a positive experience and timely resolution of issues.</li>
-                        <li>Manage complex inquiries across various service areas, utilizing strong communication skills in both languages to de-escalate situations and deliver customer satisfaction in a fast-paced environment.</li>
-                        <li>Collaborate with team members and utilize internal tools to address account, and general service inquiries, while adhering to strict confidentiality and compliance guidelines.</li>
-                    </ul>
-                    
-                </div>
-            </li>
+          <li>
+            <div class="date">July 2024 - Present | 7 mos</div>
+            <div class="info">
+              <p class="semi-bold">Software Engineer at <b class="accent-color">K&S Computing</b>
+              </p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>Architected a zero-touch automation system for device provisioning using Ansible, n8n, and
+                  PowerShell, which eliminated manual configuration and automated asset registration. Subsequently,
+                  designed a scalable, multi-tenant version of the platform featuring a Node.js API and a React frontend
+                  to serve a broad client base.</li>
+                <li>Managed and enhanced a fully containerized DevOps infrastructure, gaining hands-on experience with
+                  Docker, Kubernetes, and Helm to orchestrate scalable application deployments and secure microservice
+                  communication.</li>
+              </ul>
 
-            <li>
-                <div class="date">Feb 2022 - October 2023 | 1 yr 8 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Software Developer at <b class="accent-color">Amshot</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>Led projects across industries, including oil and gas, and served as Team Lead for a critical project. Guided the team through high-pressure situations and delivered high-quality React-based frontends on time.</li>
-                        <li>Gained expertise in AngularJS, Vue 2, ASP.NET, React Native, Azure DevOps Pipelines, and Amazon Cloud. Stayed updated on emerging technologies and best practices to drive innovative solutions.</li>
-                        <li>Fostered a collaborative team environment with an approachable leadership style, strengthening team dynamics and increasing productivity. Applied strong organizational and time management skills to effectively address challenges and ensure project success.</li>
-                    </ul>
-                    
-                </div>
-            </li>
-            
+            </div>
+          </li>
 
-            <li>
-                <div class="date">Apr 2018 - Nov 2021 | 5 yrs 5 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Associate Software Engineer at <b class="accent-color">Walmart</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>
-                            Progressed to Associate Software Engineer, contributing to high-impact projects within the ADE space using technologies like React, Node.js, MongoDB, Express, and Azure serverless architecture to design scalable solutions for a global user base.
-                        </li>
-                        <li>
-                            Spearheaded the development of an automation-driven "Self-Service" product, achieving over $100k in annual savings. This success led to the formation of the Home Office Client Automation Team, which I directed, furthering Walmart’s automation capabilities.
-                        </li>
-                        <li>
-                            Designed and developed prototypes for internal applications still in use today, and acted as a subject matter expert for Walmart's Content Management System (CMS), guiding deployment strategies and collaborating with cross-functional teams for seamless integration.
-                        </li>
-                        <li>
-                            Enhanced expertise in cloud architecture, automation, and frontend development, while strengthening leadership, collaboration, and strategic thinking skills, contributing to Walmart’s global operational success.
-                        </li>
-                    </ul>
-                </div>
-            </li>
+          <li>
+            <div class="date">Feb 2022 - October 2023 | 1 yr 8 mos</div>
+            <div class="info">
+              <p class="semi-bold">Software Developer at <b class="accent-color">Amshot</b></p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>Led projects across industries, including oil and gas, and served as Team Lead for a critical
+                  project. Guided the team through high-pressure situations and delivered high-quality React-based
+                  frontends on time.</li>
+                <li>Gained expertise in AngularJS, Vue 2, ASP.NET, React Native, Azure DevOps Pipelines, and Amazon
+                  Cloud. Stayed updated on emerging technologies and best practices to drive innovative solutions.</li>
+                <li>Fostered a collaborative team environment with an approachable leadership style, strengthening team
+                  dynamics and increasing productivity. Applied strong organizational and time management skills to
+                  effectively address challenges and ensure project success.</li>
+              </ul>
 
-            <li>
-                <div class="date">Aug 2016 - Apr 2018 | 1 yr 9 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Desktop Support Technician V at <b class="accent-color">Walmart</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>Started as a Help Desk Technician 2, providing Level 1 support for software and hardware issues. Recognized for quick problem resolution and selected for formal PowerShell scripting and advanced Windows 10 troubleshooting training at the Microsoft Building.</li>
-                        <li>Contributed by creating PowerShell scripts to automate fixes, and led the development of a self-service application using Electron.js, deployed to over 40,000 Windows workstations, improving operational efficiency and reducing help desk workload.</li>
-                        <li>Won first place at the 2016 Walmart Code@thon for developing a voice application with Node.js, showcasing problem-solving skills and a passion for innovation and collaboration in high-pressure environments.</li>
-                    </ul>
-                </div>
-            </li>
-            
-            <li>
-                <div class="date">Apr 2016 - Nov 2016 | 8 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Desktop Support Technician at <b class="accent-color">CompuCom</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>
-                            Responsible for supporting a major upgrade project, upgrading clients from Windows XP to Windows 7. This involved extensive planning and coordination to ensure a smooth transition.
-                        </li>
-                        <li>
-                            Key responsibilities included data and profile migrations, requiring a solid understanding of data management and tools to transfer data between systems. Ensured proper system configuration and troubleshooting during the upgrade process.
-                        </li>
-                        <li>
-                            Gained valuable knowledge in desktop support, system upgrades, migrations, and troubleshooting, which laid a strong foundation for my IT career and helped develop a versatile technical skill set.
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="date">Feb 2015 - Apr 2016 | 1 yr 3 mos</div>
-                <div class="info">
-                    <p class="semi-bold">Production and Repair Technician at <b class="accent-color">Randstad with HP</b></p>
-                    <hr />
-                    <ul class="resume-bullets">
-                        <li>
-                            Imaged and configured servers for clients like Longhorn Steakhouse, Bank of America, and hotels, requiring strong server hardware/software knowledge and client collaboration.
-                        </li>
-                        <li>
-                            Transitioned to Hardware Support Technician, diagnosing and repairing components for servers, desktops, laptops, tablets, and printers, including motherboard and RAM upgrades, and troubleshooting Bank of America check printers.
-                        </li>
-                        <li>
-                            Gained expertise in scripting and development, automating tasks with PowerShell, and working with HTML, CSS, JavaScript, and .NET Windows Forms, improving team efficiency and expanding technical skills.
-                        </li>
-                    </ul>
-                </div>
-            </li>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="date">Apr 2018 - Nov 2021 | 5 yrs 5 mos</div>
+            <div class="info">
+              <p class="semi-bold">Associate Software Engineer at <b class="accent-color">Walmart</b></p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>
+                  Progressed to Associate Software Engineer, contributing to high-impact projects within the ADE space
+                  using technologies like React, Node.js, MongoDB, Express, and Azure serverless architecture to design
+                  scalable solutions for a global user base.
+                </li>
+                <li>
+                  Spearheaded the development of an automation-driven "Self-Service" product, achieving over $100k in
+                  annual savings. This success led to the formation of the Home Office Client Automation Team, which I
+                  directed, furthering Walmart’s automation capabilities.
+                </li>
+                <li>
+                  Designed and developed prototypes for internal applications still in use today, and acted as a subject
+                  matter expert for Walmart's Content Management System (CMS), guiding deployment strategies and
+                  collaborating with cross-functional teams for seamless integration.
+                </li>
+                <li>
+                  Enhanced expertise in cloud architecture, automation, and frontend development, while strengthening
+                  leadership, collaboration, and strategic thinking skills, contributing to Walmart’s global operational
+                  success.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="date">Aug 2016 - Apr 2018 | 1 yr 9 mos</div>
+            <div class="info">
+              <p class="semi-bold">Desktop Support Technician V at <b class="accent-color">Walmart</b></p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>Started as a Help Desk Technician 2, providing Level 1 support for software and hardware issues.
+                  Recognized for quick problem resolution and selected for formal PowerShell scripting and advanced
+                  Windows 10 troubleshooting training at the Microsoft Building.</li>
+                <li>Contributed by creating PowerShell scripts to automate fixes, and led the development of a
+                  self-service application using Electron.js, deployed to over 40,000 Windows workstations, improving
+                  operational efficiency and reducing help desk workload.</li>
+                <li>Won first place at the 2016 Walmart Code@thon for developing a voice application with Node.js,
+                  showcasing problem-solving skills and a passion for innovation and collaboration in high-pressure
+                  environments.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="date">Apr 2016 - Nov 2016 | 8 mos</div>
+            <div class="info">
+              <p class="semi-bold">Desktop Support Technician at <b class="accent-color">CompuCom</b></p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>
+                  Responsible for supporting a major upgrade project, upgrading clients from Windows XP to Windows 7.
+                  This involved extensive planning and coordination to ensure a smooth transition.
+                </li>
+                <li>
+                  Key responsibilities included data and profile migrations, requiring a solid understanding of data
+                  management and tools to transfer data between systems. Ensured proper system configuration and
+                  troubleshooting during the upgrade process.
+                </li>
+                <li>
+                  Gained valuable knowledge in desktop support, system upgrades, migrations, and troubleshooting, which
+                  laid a strong foundation for my IT career and helped develop a versatile technical skill set.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="date">Feb 2015 - Apr 2016 | 1 yr 3 mos</div>
+            <div class="info">
+              <p class="semi-bold">Production and Repair Technician at <b class="accent-color">Randstad with HP</b></p>
+              <hr />
+              <ul class="resume-bullets">
+                <li>
+                  Imaged and configured servers for clients like Longhorn Steakhouse, Bank of America, and hotels,
+                  requiring strong server hardware/software knowledge and client collaboration.
+                </li>
+                <li>
+                  Transitioned to Hardware Support Technician, diagnosing and repairing components for servers,
+                  desktops, laptops, tablets, and printers, including motherboard and RAM upgrades, and troubleshooting
+                  Bank of America check printers.
+                </li>
+                <li>
+                  Gained expertise in scripting and development, automating tasks with PowerShell, and working with
+                  HTML, CSS, JavaScript, and .NET Windows Forms, improving team efficiency and expanding technical
+                  skills.
+                </li>
+              </ul>
+            </div>
+          </li>
 
         </ul>
+      </div>
+
+
     </div>
-
-
   </div>
-</div>
-  </body>
+</body>
+
 </html>
